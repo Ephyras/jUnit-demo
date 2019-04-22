@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'edu.cs.fsu.cen4020'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile "org.mockito:mockito-core:2.+"
+    compile group: 'org.twitter4j', name: 'twitter4j-core', version: '4.0.7'
+}

@@ -15,7 +15,7 @@ public class ComplicatedMaceTest {
         int armor = 10;
         double expectedDamage = 1000;
         try {
-            assertEquals(mace.hit(armor), expectedDamage, 0.0);
+            assertEquals(expectedDamage, mace.hit(armor), 0.0);
         } catch (IllegalArmorException ex) {
             fail("Exception was thrown " + ex.getMessage());
         }
@@ -27,7 +27,7 @@ public class ComplicatedMaceTest {
         int armor = 40;
         double expectedDamage = 960;
         try {
-            assertEquals(mace.hit(armor), expectedDamage, 0.0);
+            assertEquals(expectedDamage, mace.hit(armor), 0.0);
         } catch (IllegalArmorException ex) {
             fail("Exception was thrown " + ex.getMessage());
         }
@@ -39,7 +39,7 @@ public class ComplicatedMaceTest {
         int armor = 50;
         double expectedDamage = 900;
         try {
-            assertEquals(mace.hit(armor), expectedDamage, 0.0);
+            assertEquals(expectedDamage, mace.hit(armor), 0.0);
         } catch (IllegalArmorException ex) {
             fail("Exception was thrown " + ex.getMessage());
         }
@@ -51,7 +51,7 @@ public class ComplicatedMaceTest {
         int armor = 100;
         double expectedDamage = 700;
         try {
-            assertEquals(mace.hit(armor), expectedDamage, 0.0);
+            assertEquals(expectedDamage, mace.hit(armor), 0.0);
         } catch (IllegalArmorException ex) {
             fail("Exception was thrown " + ex.getMessage());
         }
@@ -63,7 +63,7 @@ public class ComplicatedMaceTest {
         int armor = -1;
         double expectedDamage = 1000;
         try {
-            assertEquals(mace.hit(armor), expectedDamage, 0.0);
+            assertEquals(expectedDamage, mace.hit(armor), 0.0);
             fail("Exception was not thrown");
         } catch (IllegalArmorException ex) {
             //Everything was OK
